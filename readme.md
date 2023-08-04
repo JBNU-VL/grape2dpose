@@ -5,7 +5,7 @@ This is the offical repo of GRAPE
 [[`Project page`](https://grape2dpose.netlify.app)]
  
 <p align="center">
-<img src="pic/overview.png" height="320" >
+<img src="pic/overview.png">
 <p>
 
 ---
