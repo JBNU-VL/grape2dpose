@@ -1,0 +1,14 @@
+opencv-python
+numpy
+tqdm
+yacs
+json_tricks
+tensorboardX
+pycocotools   
+scipy
+Cython
+pandas
+pyyaml
+scikit-image
+cffi
+munkres
