@@ -42,7 +42,7 @@ We use 4 NVIDIA RTX A6000 GPUs for training
     pip install -r requirements.txt
 ```
 ### 5. Install API
-   1. Install [COCOAPI](https://github.com/cocodataset/cocoapi)
+   Install [COCOAPI](https://github.com/cocodataset/cocoapi)
    and [CrowdPoseAPI](https://github.com/Jeff-sjtu/CrowdPose).
 
 ### 6. Your directory tree should look like this
@@ -93,7 +93,7 @@ ${ROOT/datasets}
 ## Quick start
 
 ### 1. Download trained model
-1. Download pretrained models from ([here](https://drive.google.com/drive/folders/1MsfA6yFmhNStReGvIJ2CyOZzF6PTvFCk?usp=drive_link)) and make models directory look like this:
+Download pretrained models from ([here](https://drive.google.com/drive/folders/1MsfA6yFmhNStReGvIJ2CyOZzF6PTvFCk?usp=drive_link)) and make models directory look like this:
 
 ```
 ${ROOT/model}
@@ -107,7 +107,7 @@ ${ROOT/model}
 
 ### 2. Demo
 
-1. Demonstration on video--You will get **demo_video_pose.avi** and **demo_video_black.avi** two results in the **${ROOT/demo_images_video/video/}** folder
+Demonstration on video--You will get **demo_video_pose.avi** and **demo_video_black.avi** two results in the **${ROOT/demo_images_video/video/}** folder
 ```
 cd ./code/tools
 ```
@@ -115,14 +115,14 @@ cd ./code/tools
 CUDA_VISIBLE_DEVICES=0 python demo_video.py --cfg ../experiments/config_crowdpose_w32.yaml TEST.MODEL_FILE ../../model/model_crowdpose.pth.tar
 ```
 
-2. Demonstration on images--You will get **xx_pred.jpg** in the **${ROOT/demo_images_video/images/}** folder
+Demonstration on images--You will get **xx_pred.jpg** in the **${ROOT/demo_images_video/images/}** folder
 ```
 CUDA_VISIBLE_DEVICES=0 python demo_images.py --cfg ../experiments/config_crowdpose_w32.yaml TEST.MODEL_FILE ../../model/model_crowdpose.pth.tar
 ```
 
 ### 3. Testing and Training
 
-1. Testing on Crowdpose dataset
+Testing on Crowdpose dataset
 ```
 cd ./code/tools
 ```
@@ -130,7 +130,7 @@ cd ./code/tools
 CUDA_VISIBLE_DEVICES=0 python valid.py --cfg ../experiments/config_crowdpose_w32.yaml TEST.MODEL_FILE ../../model/model_crowdpose.pth.tar
 ```
 
-1. Training on Crowdpose dataset (By default, 4 GPUs are used for training)
+Training on Crowdpose dataset (By default, 4 GPUs are used for training)
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --cfg ../experiments/config_crowdpose_w32.yaml FP16.ENABLED True FP16.DYNAMIC_LOSS_SCALE True MODEL.SYNC_BN True
 ```
