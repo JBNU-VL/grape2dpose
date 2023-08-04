@@ -24,8 +24,8 @@ We use 4 NVIDIA RTX A6000 GPUs for training
 
 ### 1. Clone code
 ```shell
-    git clone https://github.com/????
-    cd ./????
+    git clone https://github.com/JBNU-VL/grape2dpose.git
+    cd ./grape2dpose
 ```
 ### 2. Create a conda environment for this repo
 ```shell
