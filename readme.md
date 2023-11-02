@@ -1,7 +1,7 @@
 # Globally-Robust Instance Identification and Locally-Accurate Keypoint Alignment for Multi-Person Pose Estimation (ACM MM 2023)
 
 This is the offical repo of GRAPE
-[[`Paper`](https://openaccess.thecvf.com/content/CVPR2022/papers/Wang_Contextual_Instance_Decoupling_for_Robust_Multi-Person_Pose_Estimation_CVPR_2022_paper.pdf)]
+[[`Paper`](https://dl.acm.org/doi/10.1145/3581783.3612525)]
 [[`Project page`](https://grape2dpose.netlify.app)]
  
 <p align="center">
