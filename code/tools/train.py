@@ -125,7 +125,6 @@ def main_worker(gpu, ngpus_per_node, args, final_output_dir, tb_log_dir):
         ct += 1
         # 481 for small and 916 for full
         if (ct < 916):
-            # if(ct<924 or 'transition_heatmap' in name):
             list_name_frozen.append(name)
 
     # copy model file
@@ -175,7 +174,6 @@ def main_worker(gpu, ngpus_per_node, args, final_output_dir, tb_log_dir):
     best_model = False
     last_epoch = -1
     optimizer = get_optimizer_frozen(cfg, model, list_name_frozen)
-    #     optimizer = get_optimizer(cfg, model)
 
     if cfg.FP16.ENABLED:
         optimizer = FP16_Optimizer(optimizer,
