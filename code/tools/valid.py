@@ -92,13 +92,10 @@ def main():
 
     pbar = tqdm(total=len(test_dataset)) if cfg.TEST.LOG_PROGRESS else None
 
-    tt = 0
+
     for i, images in enumerate(data_loader):
         assert 1 == images.size(0), 'Test batch size should be 1'
         image = images[0].cpu().numpy()
-        tt += 1
-        if tt == 5:
-            break
 
         base_size, center, scale = get_multi_scale_size(image, cfg.DATASET.INPUT_SIZE, 1.0, 1.0)
 
